@@ -47,7 +47,6 @@ export default class Panel extends PureComponent {
   getTimeDisplay = (date) => {
     const secondsInWeek = 604800000;
     const now = new Date().getTime();
-    console.log({ date: now - Date.parse(date) });
     if (now - Date.parse(date) > secondsInWeek) {
       const newDate = new Date(date).toLocaleDateString();
       return newDate;
