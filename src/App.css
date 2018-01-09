@@ -2,6 +2,7 @@ body {
   font-size: 16px;
   width: 100%;
   background-color: #f6f3ee;
+  color: #343434;
 }
 
 /* Navigations */
@@ -55,7 +56,7 @@ nav {
 /* Panels that wraps asciis */
 .ascii__panel {
   border: 1px solid #dbdbdb;
-  height: 100px;
+  height: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,6 +65,33 @@ nav {
   border-radius: 1px;
   margin: 16px;
   background-color: #fff;
+  position: relative;
+}
+
+.price__p {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background-color: #f6f329;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+.date__p {
+  position: absolute;
+  width: calc(100% - 16px);
+  height: 30px;
+  top: calc(100% - 30px);
+  left: 0;
+  border-top: 1px solid #dbdbdb;
+  background-color: rgba(246, 243, 41, .15);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 16px;
+  font-size: 14px;
+  color: #807d7d;
 }
 
 /* Media queries */

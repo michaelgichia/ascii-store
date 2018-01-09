@@ -45,6 +45,7 @@ class App extends Component {
   render() {
     const { idFilter, products, selectFilter } = this.state;
     const sortedProducts = this.filterBySizeOrPrize(products, selectFilter, idFilter);
+    // console.log({products})
 
     return (
       <React.Fragment>
@@ -67,7 +68,6 @@ class App extends Component {
             placeholder="Search for faces with id"
           />
           <input
-            type="text"
             type="button"
             value="&#x1F50D;"
             className="search__btn"
