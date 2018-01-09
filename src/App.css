@@ -45,7 +45,7 @@ nav {
 }
 
 /* Panel wrapper */
-.main__wrapper {
+.main__wrapper > div {
   min-height: 50vh;
   margin: 16px 50px;
   position: relative;
@@ -56,14 +56,14 @@ nav {
 /* Panels that wraps asciis */
 .ascii__panel {
   border: 1px solid #dbdbdb;
-  height: 130px;
+  height: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #343434;
   box-sizing: border-box;
   border-radius: 1px;
-  margin: 16px;
+  margin: 8px;
   background-color: #fff;
   position: relative;
 }
@@ -94,22 +94,27 @@ nav {
   color: #807d7d;
 }
 
+.hasMore {
+  text-align: center;
+  width: 100%;
+}
+
 /* Media queries */
 @media screen and (min-width: 1300px) and (max-width: 1600px) {
   .ascii__panel {
-    width: calc(20% - 32px);
+    width: calc(20% - 16px);
   }
 }
 
 @media screen and (min-width: 990px) and (max-width: 1300px) {
   .ascii__panel {
-    width: calc(25% - 32px);
+    width: calc(25% - 16px);
   }
 }
 
 @media screen and (min-width: 600px) and (max-width: 990px) {
   .ascii__panel {
-    width: calc(33.3333% - 32px);
+    width: calc(33.3333% - 16px);
   }
 }
 
