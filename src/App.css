@@ -1,3 +1,57 @@
+body {
+  font-size: 16px;
+  width: 100%;
+  background-color: #f6f3ee;
+}
+
+/* Navigations */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  border-bottom: 1px solid #dbdbdb;
+  background-color: #fff;
+  z-index: 4;
+  width: 100%;
+}
+
+/* Select input */
+.select__input {
+  padding: 5.5px 25px;
+  background-color: #fff;
+  border: 2px solid #dbdbdb;
+  border-right-width: 1px;
+}
+
+/* Search input */
+.search_input {
+  padding: 6px 45px 6px 25px;
+  background-color: #fff;
+  border: 2px solid #dbdbdb;
+  border-left-width: 0;
+  border-right-width: 0;
+  width: 30%;
+}
+
+/* Search button */
+.search__btn {
+  padding: 6px 12px;
+  background-color: #fff;
+  border: 2px solid #dbdbdb;
+  border-left-width: 1px;
+  cursor: pointer;
+}
+
+/* Panel wrapper */
+.main__wrapper {
+  min-height: 50vh;
+  margin: 16px 50px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Panels that wraps asciis */
 .ascii__panel {
   border: 1px solid #dbdbdb;
@@ -44,5 +98,12 @@
     width:100%;
     margin-left: 8px;
     margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 768px)  {
+  .main__wrapper {
+    width: calc(100% - 16px);
+    margin: 16px 8px;
   }
 }
