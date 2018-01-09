@@ -1,0 +1,48 @@
+/* Panels that wraps asciis */
+.ascii__panel {
+  border: 1px solid #dbdbdb;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #343434;
+  box-sizing: border-box;
+  border-radius: 1px;
+  margin: 16px;
+  background-color: #fff;
+}
+
+/* Media queries */
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+  .ascii__panel {
+    width: calc(20% - 32px);
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1300px) {
+  .ascii__panel {
+    width: calc(25% - 32px);
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 990px) {
+  .ascii__panel {
+    width: calc(33.3333% - 32px);
+  }
+}
+
+@media screen and (min-width: 330px) and (max-width: 600px) {
+  .ascii__panel {
+    width: calc(50% - 16px);
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 330px)  {
+  .ascii__panel {
+    width:100%;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
